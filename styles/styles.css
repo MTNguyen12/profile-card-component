@@ -43,7 +43,7 @@ body > img {
   box-shadow: 0 0 5em rgba(0, 0, 0, 0.2);
   width: 20em;
   height: 23.5em;
-  background-image: url(images/bg-pattern-card.svg);
+  background-image: url(../images/bg-pattern-card.svg);
   text-align: center;
 }
 
