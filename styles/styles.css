@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  background-color: hsl(185, 75%, 39%);
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+/* body background styles */
+
+body > img {
+  position: absolute;
+  opacity: 0.5;
+}
+
+.bg-pattern-top {
+  right: 40%;
+  bottom: 40%;
+}
+
+.bg-pattern-bottom {
+  top: 40%;
+  left: 40%;
+}
+
+/* card styles */
+
+.center {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+.profile-card {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 0 5em rgba(0, 0, 0, 0.2);
+  width: 20em;
+  height: 23.5em;
+  background-image: url(images/bg-pattern-card.svg);
+  text-align: center;
+}
+
+.profile-picture {
+  position: absolute;
+  bottom: 48%;
+  left: 50%;
+  z-index: 2;
+  transform: translateX(-50%);
+  border: solid 6px hsl(0, 0%, 100%);
+  border-radius: 60px;
+}
+
+.white-section {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: 62%;
+  background-color: hsl(0, 0%, 100%);
+}
+
+/* text styles */
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-top: 48px;
+  height: 233px;
+}
+
+h1, h2 {
+  font-size: 1.15em;
+  color: hsl(229, 23%, 23%);
+}
+
+p, span {
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+}
+
+span {
+  padding-left: 6px;
+}
+
+hr {
+  opacity: 0.2;
+  border: none;
+  border-bottom: solid 1px hsl(0, 0%, 59%);
+}
+
+.person-info > p {
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.profile-stats {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.profile-stats p {
+  margin-top: 4px;
+  font-size: 0.65em;
+}
+
+.profile-stats div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* media query for desktop */
+
+@media screen and (min-width: 601px) {
+  body > img {
+    opacity: 0.7;
+  }
+  
+  .bg-pattern-top {
+    right: 52%;
+    bottom: 40%;
+  }
+
+  .bg-pattern-bottom {
+    left: 50%;
+    top: 50%;
+  }
+
+  .profile-card {
+    width: 22em;
+  }
+}
